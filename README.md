@@ -22,9 +22,19 @@ Note: It's important to use this script with caution, as it has the potential to
 
 ## Use Case
 
-This script can be useful in situations where you have a large number of files spread across multiple subdirectories and you want to consolidate them into a single directory. For example, you may have a folder containing multiple subfolders of images, and you want to move all the images into a single folder to make it easier to browse and organize them.
-By using this script, you can quickly and easily move all the files within the subdirectories to the root folder, without having to manually copy and paste each file. This can save a significant amount of time and effort, especially when dealing with a large number of files.
-Note that this script should be used with caution, as it has the potential to overwrite existing files in the root folder if they have the same name as files being moved from the subdirectories. It's recommended that you backup any important files before running the script, or modify the script to rename any files that have the same name as existing files in the root folder.
+Use Case
+Do you have a folder full of subfolders containing files that you want to move to one main folder? For example, let's say you have a folder named "Pictures" that contains subfolders for each year, and each year folder contains subfolders for each month. If you want to move all your pictures to one main folder, this Python script can help!
+
+Using the script is easy:
+
+Download the script from this repository and save it to your computer.
+Open a terminal or command prompt window and navigate to the folder where you saved the script.
+Run the script by entering the following command: python move_files_to_root.py
+When prompted, enter the directory path of the main folder you want to move the files to (in this case, the "Pictures" folder).
+The script will move all the files from the subfolders into the main folder, overwriting any files with the same name in the main folder.
+Note: It's important to be careful when using this script, as it has the potential to overwrite existing files in the main folder if they have the same name as files being moved from the subfolders. It's recommended that you backup any important files before running the script or modify the script to rename any files that have the same name as existing files in the main folder.
+
+For the example we used above, the script would move all the files from the subfolders (e.g. "Pictures/2019/January/pic1.jpg", "Pictures/2019/February/pic2.jpg", etc.) to the "Pictures" folder. Once the script is done running, all the pictures will be in one place and it will be much easier to view and organize them.
 
 ### Code
 
