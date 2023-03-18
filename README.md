@@ -14,7 +14,7 @@ You will also need to have the `os` and `shutil` modules installed. These module
 
 1. Clone or download this repository to your computer.
 2. Open a terminal or command prompt window and navigate to the root folder of the cloned/downloaded repository.
-3. Run the script by entering the following command: `python move_files_to_root.py`
+3. Run the script by entering the following command: `python movefilestoroot.py`
 4. When prompted, enter the directory path of the root folder you wish to use.
 5. The script will then move all files within the subdirectories of the specified root folder to the root folder itself. If there are any files in the root folder with the same name as files being moved from the subdirectories, the script will overwrite them.
 
