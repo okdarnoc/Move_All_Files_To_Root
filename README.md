@@ -18,7 +18,9 @@ You will also need to have the `os` and `shutil` modules installed. These module
 4. When prompted, enter the directory path of the root folder you wish to use.
 5. The script will then move all files within the subdirectories of the specified root folder to the root folder itself. If there are any files in the root folder with the same name as files being moved from the subdirectories, the script will overwrite them.
 
-Note: It's important to use this script with caution, as it has the potential to overwrite existing files if not used properly.
+Note: This updated code first checks if the destination file already exists, and if it does, it adds a number to the filename to make it unique. It uses a while loop to increment the number until it finds a unique filename that doesn't already exist in the root folder. The new filename is then used as the destination path for the shutil.move() function.
+
+Note that the code now prints a message to the console for each file that gets renamed, so that you can see which files were affected by the renaming. You can remove these print statements if you don't need them.
 
 ## Use Case
 
